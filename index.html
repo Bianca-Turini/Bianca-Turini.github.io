@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bianca Turini</title>
+  <meta name="description" content="Bianca Turini — PhD student at ICFO, The Institute of Photonic Sciences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply the saved theme before the page paints (light is the default)
+    try {
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.dataset.theme = "dark";
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- ───────── Top bar ───────── -->
+  <header class="bar">
+    <a class="mark" href="#">B. Turini</a>
+    <div class="bar-right">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="#education">CV</a>
+        <a href="mailto:you@example.com">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme">Dark</button>
+    </div>
+  </header>
+
+  <!-- ───────── Hero ───────── -->
+  <div class="hero-wrap">
+    <section class="hero">
+      <p class="lede-label">PhD Researcher — Quantum Nano-Optoelectronics, ICFO</p>
+      <h1>Bianca Turini<span class="dot">.</span></h1>
+      <div class="hero-row">
+        <p class="lede">
+          PhD student at <a href="https://www.icfo.eu">ICFO – The Institute of Photonic Sciences</a>.
+          I work on <span class="hl">[your research topic in a few words]</span>.
+        </p>
+        <img class="portrait" src="assets/photo.svg" alt="Portrait of Bianca Turini">
+      </div>
+      <ul class="links">
+        <li><a href="https://scholar.google.com/citations?user=Sp9yKCgAAAAJ&amp;hl=en">Google Scholar ↗</a></li>
+        <li><a href="https://orcid.org/">ORCID ↗</a></li>
+        <li><a href="https://github.com/Bianca-Turini">GitHub ↗</a></li>
+        <li><a href="assets/cv.pdf">CV (PDF) ↗</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <main>
+
+    <!-- ───────── About ───────── -->
+    <section class="block" id="about">
+      <h2><span class="num">01</span>About</h2>
+      <div class="prose">
+        <p>
+          I am a PhD student in the
+          <a href="https://www.icfo.eu/research-group/18/qno/home/">Quantum Nano-Optoelectronics</a>
+          group led by Prof. Frank Koppens at ICFO, co-supervised by Prof. Adrian Bachtold
+          (<a href="https://bachtoldgroup.icfo.eu/">Quantum Nanomechanics</a>). My research focuses on
+          [one or two sentences describing what you study and why it matters].
+        </p>
+        <p>
+          Before ICFO, I completed my M.Sc. in [field] at [university].
+        </p>
+        <ul class="tags">
+          <li>[Interest one]</li>
+          <li>[Interest two]</li>
+          <li>[Interest three]</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────── News ───────── -->
+    <section class="block">
+      <h2><span class="num">02</span>News</h2>
+      <ul class="rows">
+        <li><span class="meta">Apr 2026</span><span>Our paper on graphene Landau levels in a hyperbolic phonon-polariton cavity is out in <a href="https://doi.org/10.1103/69jg-sq8r"><em>Physical Review Research</em></a>.</span></li>
+        <li><span class="meta">2026</span><span>Poster at <em>Frontiers of Cavity Quantum Electrodynamics</em>, Paris.</span></li>
+        <li><span class="meta">Jul 2025</span><span>Poster at <em>FisMat 2025</em>.</span></li>
+        <li><span class="meta">Dec 2023</span><span>Started my PhD at ICFO as a “la Caixa” INPhINIT fellow.</span></li>
+      </ul>
+    </section>
+
+    <!-- ───────── Publications ───────── -->
+    <section class="block" id="publications">
+      <h2><span class="num">03</span>Publications</h2>
+      <ol class="pubs">
+        <li>
+          <span class="meta">[4] · 2026</span>
+          <div>
+            <p class="title">Quantum electrodynamics of graphene Landau levels in a deep-subwavelength hyperbolic phonon-polariton cavity</p>
+            <p class="authors">G. M. Andolina, M. Ceccanti, <strong>B. Turini</strong>, R. Riolo, M. Polini, M. Schirò, F. H. L. Koppens</p>
+            <p class="venue"><em>Physical Review Research</em> 8, 023044 (2026)</p>
+            <p class="pub-links"><a href="https://doi.org/10.1103/69jg-sq8r">DOI</a><a href="https://arxiv.org/abs/2501.04133">arXiv</a></p>
+          </div>
+        </li>
+        <li>
+          <span class="meta">[3] · 2025</span>
+          <div>
+            <p class="title">Side-gate modulation of supercurrent in InSb nanoflag-based Josephson junctions</p>
+            <p class="authors"><strong>B. Turini</strong>, S. Salimian, M. Carrega, F. Paolucci, V. Zannier, L. Sorba, S. Heun</p>
+            <p class="venue"><em>Physica Status Solidi (b)</em> 262, 2400534 (2025)</p>
+            <p class="pub-links"><a href="https://doi.org/10.1002/pssb.202400534">DOI</a><a href="https://arxiv.org/abs/2410.14469">arXiv</a></p>
+          </div>
+        </li>
+        <li>
+          <span class="meta">[2] · 2023</span>
+          <div>
+            <p class="title">Half-integer Shapiro steps in highly transmissive InSb nanoflag Josephson junctions</p>
+            <p class="authors">A. Iorio, A. Crippa, <strong>B. Turini</strong>, S. Salimian, M. Carrega, L. Chirolli, V. Zannier, L. Sorba, E. Strambini, F. Giazotto, S. Heun</p>
+            <p class="venue"><em>Physical Review Research</em> 5, 033015 (2023)</p>
+            <p class="pub-links"><a href="https://doi.org/10.1103/PhysRevResearch.5.033015">DOI</a><a href="https://arxiv.org/abs/2303.05951">arXiv</a></p>
+          </div>
+        </li>
+        <li>
+          <span class="meta">[1] · 2022</span>
+          <div>
+            <p class="title">Josephson diode effect in high-mobility InSb nanoflags</p>
+            <p class="authors"><strong>B. Turini</strong>, S. Salimian, M. Carrega, A. Iorio, E. Strambini, F. Giazotto, V. Zannier, L. Sorba, S. Heun</p>
+            <p class="venue"><em>Nano Letters</em> 22, 8502 (2022)</p>
+            <p class="pub-links"><a href="https://doi.org/10.1021/acs.nanolett.2c02899">DOI</a><a href="https://arxiv.org/abs/2207.08772">arXiv</a></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ───────── Talks & Posters ───────── -->
+    <section class="block" id="talks">
+      <h2><span class="num">04</span>Talks &amp; Posters</h2>
+      <ul class="rows talks">
+        <li>
+          <span class="meta">2026</span>
+          <span>
+            <span class="kind">Poster</span>
+            <strong>Forbidden Landau-level transitions and mode hybridization via phonon-polariton nanocavities</strong><br>
+            <span class="where">Frontiers of Cavity Quantum Electrodynamics — Paris, France</span>
+          </span>
+        </li>
+        <li>
+          <span class="meta">2026</span>
+          <span>
+            <span class="kind">[Talk / Poster]</span>
+            <strong>Hyperbolic cavity electrodynamics with graphene electrons in the quantum Hall regime</strong><br>
+            <span class="where">International Conference on Science and Technology of Quantum Matter — [City, Country]</span>
+          </span>
+        </li>
+        <li>
+          <span class="meta">Jul 2025</span>
+          <span>
+            <span class="kind">Poster</span>
+            <strong>Graphene quantum Hall electrodynamics in deep-subwavelength phonon-polariton cavities</strong><br>
+            <span class="where">FisMat 2025 — [City], Italy</span>
+          </span>
+        </li>
+        <li>
+          <span class="meta">Mar 2024</span>
+          <span>
+            <span class="kind">Talk</span>
+            <strong>Exploring cavity-induced effects in 2D quantum materials</strong><br>
+            <span class="where">APS GERA Energy Workshop — Minneapolis, USA</span>
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ───────── Education ───────── -->
+    <section class="block" id="education">
+      <h2><span class="num">05</span>Education</h2>
+      <ul class="rows">
+        <li><span class="meta">2023 —</span><span><strong>PhD in Photonics</strong><br>ICFO &amp; Universitat Politècnica de Catalunya<br><span class="where">“la Caixa” INPhINIT doctoral fellowship</span></span></li>
+        <li><span class="meta">20XX — XX</span><span><strong>M.Sc. in [Field]</strong><br>[University]</span></li>
+        <li><span class="meta">20XX — XX</span><span><strong>B.Sc. in [Field]</strong><br>[University]</span></li>
+      </ul>
+    </section>
+
+    <!-- ───────── Service ───────── -->
+    <section class="block" id="service">
+      <h2><span class="num">06</span>Service</h2>
+      <ul class="rows">
+        <li><span class="meta">2025—26</span><span><strong>Nanofabrication Seminar Series</strong><br><span class="where">President of the organising committee (2025), committee member (2026)</span></span></li>
+        <li><span class="meta">2024</span><span><strong>Student Conference in Optics and Photonics</strong><br><span class="where">Secretary of the organising committee — Castelldefels</span></span></li>
+        <li><span class="meta">—</span><span><strong>Diversity &amp; Inclusion Committee</strong><br><span class="where">Member, ICFO</span></span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <span><a href="mailto:you@example.com">you@example.com</a></span>
+    <span>ICFO · Castelldefels, Barcelona</span>
+    <span>Updated Nov 2026</span>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.querySelector(".theme-toggle");
+      function label() {
+        btn.textContent = root.dataset.theme === "dark" ? "Light" : "Dark";
+      }
+      label();
+      btn.addEventListener("click", function () {
+        var dark = root.dataset.theme !== "dark";
+        if (dark) root.dataset.theme = "dark"; else delete root.dataset.theme;
+        try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
+        label();
+      });
+    })();
+  </script>
+
+</body>
+</html>
