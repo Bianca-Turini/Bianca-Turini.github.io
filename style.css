@@ -104,6 +104,10 @@ main { padding: 0 var(--pad); max-width: 80rem; margin: 0 auto; }
   padding: clamp(3rem, 8vw, 6rem) var(--pad) clamp(2.5rem, 6vw, 4rem);
   max-width: 80rem;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
 }
 
 .lede-label {
@@ -130,23 +134,22 @@ h1 {
   gap: 2rem;
 }
 .lede {
+  margin: 0;
   font-size: clamp(1.35rem, 2.6vw, 2rem);
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -.01em;
-  max-width: 36ch;
+  max-width: 52ch;
 }
 .lede a { border-bottom: 2px solid var(--accent); }
 .lede a:hover { color: var(--accent); }
 .hl { color: var(--accent); font-weight: 500; }
 
 .portrait {
-  width: clamp(110px, 15vw, 180px);
-  aspect-ratio: 1;
-  object-fit: cover;
-  filter: grayscale(1) contrast(1.05);
-  border: 1px solid var(--line);
-  flex-shrink: 0;
+  display: block;
+  width: clamp(150px, 18vw, 230px);
+  height: auto;
+  border: 1px solid var(--hair);
 }
 
 .links {
@@ -180,6 +183,8 @@ h1 {
   border-bottom: 1px solid var(--hair);
 }
 .block:last-child { border-bottom: 0; }
+/* Leave room for the sticky top bar when jumping to a section */
+[id] { scroll-margin-top: 3.5rem; }
 
 h2 {
   margin: 0;
@@ -235,6 +240,80 @@ h2 .num {
 .rows a:hover { color: var(--accent); }
 
 /* Talks */
+.sub {
+  font-family: var(--mono);
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 .6rem;
+}
+.talks + .sub { margin-top: 2.25rem; }
+.kind.award {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.talk-fig { margin: .9rem 0 .25rem; }
+.talk-fig.single { max-width: 26rem; }
+.talk-fig.single .panel img { width: 100%; height: auto; }
+.talk-fig.single.tall { max-width: 18rem; }
+.fig-grid {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  gap: .5rem;
+}
+.panel {
+  position: relative;
+  display: block;
+  border: 0;
+}
+.panel img, .panel video {
+  display: block;
+  height: clamp(130px, 40vw, 190px);
+  width: auto;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  transition: opacity .15s;
+}
+a.panel:hover img { opacity: .85; }
+/* Wide bottom panel: spans both columns and matches their combined width */
+.panel.wide { grid-column: 1 / -1; }
+.panel.wide img {
+  width: 0;
+  min-width: 100%;
+  height: auto;
+}
+.panel-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .1rem .4rem;
+  background: var(--ink);
+  color: var(--bg);
+  font-family: var(--mono);
+  font-size: .7rem;
+  font-weight: 500;
+}
+.talk-fig figcaption {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: .6rem;
+  max-width: 32rem;
+  line-height: 1.6;
+}
+.talk-fig figcaption b { color: var(--ink); font-weight: 500; }
+.talk-photo figcaption {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: .5rem;
+}
 .talks strong { display: inline; line-height: 1.35; }
 .kind {
   display: inline-block;
@@ -270,7 +349,16 @@ h2 .num {
 }
 .pubs .authors, .pubs .venue { color: var(--muted); font-size: .98rem; }
 .pubs .authors strong { color: var(--ink); font-weight: 600; }
-.pub-links { display: flex; gap: .4rem; margin-top: .75rem; }
+.pub-links { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-top: .75rem; }
+.cites {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-left: .5rem;
+}
+.cites b { color: var(--accent); font-weight: 500; }
 .pub-links a {
   font-family: var(--mono);
   font-size: .7rem;
@@ -305,7 +393,8 @@ footer a:hover { color: var(--accent); }
 /* ───────── Small screens ───────── */
 @media (max-width: 720px) {
   .block { grid-template-columns: 1fr; gap: 1.25rem; }
-  .hero-row { flex-direction: column-reverse; align-items: flex-start; }
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .portrait { order: -1; width: 140px; }
   .rows li, .pubs li { grid-template-columns: 1fr; gap: .2rem; }
   .bar nav a:not(:last-child) { display: none; }
 }

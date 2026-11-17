@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bianca Turini</title>
-  <meta name="description" content="Bianca Turini — PhD student at ICFO, The Institute of Photonic Sciences.">
+  <link rel="icon" href="assets/favicon-32.png?v=8" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-64.png?v=8" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=8">
+  <meta name="description" content="Bianca Turini — PhD student at ICFO. I’m interested in the transport properties of strongly interacting light–matter systems.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -26,10 +29,11 @@
     <div class="bar-right">
       <nav>
         <a href="#about">About</a>
+        <a href="#news">News</a>
         <a href="#publications">Publications</a>
         <a href="#talks">Talks</a>
-        <a href="#education">CV</a>
-        <a href="mailto:you@example.com">Contact</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact" class="js-mail">Contact</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Switch colour theme">Dark</button>
     </div>
@@ -38,21 +42,23 @@
   <!-- ───────── Hero ───────── -->
   <div class="hero-wrap">
     <section class="hero">
-      <p class="lede-label">PhD Researcher — Quantum Nano-Optoelectronics, ICFO</p>
-      <h1>Bianca Turini<span class="dot">.</span></h1>
-      <div class="hero-row">
-        <p class="lede">
-          PhD student at <a href="https://www.icfo.eu">ICFO – The Institute of Photonic Sciences</a>.
-          I work on <span class="hl">[your research topic in a few words]</span>.
+      <div class="hero-text">
+      <p class="lede-label">PhD Student — Quantum Nano-Optoelectronics, ICFO</p>
+      <h1>Bianca Turini</h1>
+      <p class="lede">
+          PhD student at <a href="https://www.icfo.eu">ICFO – The Institute of Photonic Sciences</a>.<br>
+          I’m interested in the transport properties of strongly interacting light–matter systems.
+          <a class="hl" href="https://doi.org/10.1016/S0038-1098(00)00469-5" target="_blank" rel="noopener" title="The very strong coupling regime: light–matter coupling comparable to the exciton binding energy, so the cavity reshapes the (magneto)exciton itself.">Very strongly.</a>
         </p>
-        <img class="portrait" src="assets/photo.svg" alt="Portrait of Bianca Turini">
-      </div>
       <ul class="links">
         <li><a href="https://scholar.google.com/citations?user=Sp9yKCgAAAAJ&amp;hl=en">Google Scholar ↗</a></li>
-        <li><a href="https://orcid.org/">ORCID ↗</a></li>
+        <li><a href="https://orcid.org/0000-0002-0188-6355">ORCID ↗</a></li>
+        <li><a href="https://www.linkedin.com/in/bianca-turini/">LinkedIn ↗</a></li>
         <li><a href="https://github.com/Bianca-Turini">GitHub ↗</a></li>
         <li><a href="assets/cv.pdf">CV (PDF) ↗</a></li>
       </ul>
+      </div>
+      <img class="portrait" src="assets/photo.jpg" alt="Portrait of Bianca Turini">
     </section>
   </div>
 
@@ -63,30 +69,47 @@
       <h2><span class="num">01</span>About</h2>
       <div class="prose">
         <p>
-          I am a PhD student in the
+          I am a
+          <a href="https://becarios.fundacionlacaixa.org/en/bianca-turini--B006120" target="_blank" rel="noopener"><strong>“la Caixa” Foundation fellow</strong></a>
+          at ICFO, working in the
           <a href="https://www.icfo.eu/research-group/18/qno/home/">Quantum Nano-Optoelectronics</a>
-          group led by Prof. Frank Koppens at ICFO, co-supervised by Prof. Adrian Bachtold
-          (<a href="https://bachtoldgroup.icfo.eu/">Quantum Nanomechanics</a>). My research focuses on
-          [one or two sentences describing what you study and why it matters].
+          group led by Prof. Frank Koppens and co-supervised by Prof. Adrian Bachtold
+          (<a href="https://www.icfo.eu/research-group/24/nem/home/">Quantum NanoElectronics and NanoMechanics</a>).
+          My research focuses on <strong>cavity quantum electrodynamics in two-dimensional materials</strong>.<br>
+          I use deep-subwavelength phonon-polariton cavities in hexagonal boron nitride to confine
+          light to the nanoscale and engineer its coupling to correlated electron systems,
+          which I investigate through transport.
         </p>
         <p>
-          Before ICFO, I completed my M.Sc. in [field] at [university].
+          I am a <em>Normalista</em>, an alumna of the Scuola Normale Superiore in Pisa,
+          one of Italy’s most selective academic institutions. Outside the lab, I am an active member of
+          <a href="https://www.icfo.eu/studies/student-organization/" target="_blank" rel="noopener">ICONS</a>
+          (ICFO’s Optica, SPIE, and EPS student chapter) and co-founder of the
+          <a href="https://lnkd.in/p/e3DTUmzd" target="_blank" rel="noopener">Nanofabrication Seminar Series</a>.
         </p>
         <ul class="tags">
-          <li>[Interest one]</li>
-          <li>[Interest two]</li>
-          <li>[Interest three]</li>
+          <li>Cavity QED</li>
+          <li>Quantum Hall physics</li>
+          <li>Phonon polaritons</li>
+          <li>2D materials</li>
+          <li>Nanophotonics</li>
         </ul>
       </div>
     </section>
 
     <!-- ───────── News ───────── -->
-    <section class="block">
+    <section class="block" id="news">
       <h2><span class="num">02</span>News</h2>
       <ul class="rows">
+        <li><span class="meta">Apr 2026</span><div>Invited for a one-week research visit to the <strong>Collège de France</strong> in Paris, hosted by Dr. Gian Marcello Andolina.
+            <figure class="talk-fig single">
+              <a class="panel" href="assets/college-de-france.jpg"><img src="assets/college-de-france.jpg" alt="View over the Paris rooftops and Notre-Dame from the Collège de France terrace" loading="lazy"></a>
+              <figcaption>View from the Collège de France terrace.</figcaption>
+            </figure></div></li>
         <li><span class="meta">Apr 2026</span><span>Our paper on graphene Landau levels in a hyperbolic phonon-polariton cavity is out in <a href="https://doi.org/10.1103/69jg-sq8r"><em>Physical Review Research</em></a>.</span></li>
-        <li><span class="meta">2026</span><span>Poster at <em>Frontiers of Cavity Quantum Electrodynamics</em>, Paris.</span></li>
-        <li><span class="meta">Jul 2025</span><span>Poster at <em>FisMat 2025</em>.</span></li>
+        <li><span class="meta">Apr 2026</span><span>My poster at <em>Frontiers of Cavity Quantum Electrodynamics</em> in Paris received an <strong>Honorable Mention</strong> — <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7455293863033958400/">watch the interview</a>.</span></li>
+        <li><span class="meta">Jul 2025</span><span><strong>Invited talk</strong> at <em>FisMat 2025</em>, the Italian condensed matter physics conference, in Venice.</span></li>
+        <li><span class="meta">Apr 2025</span><span><strong>Invited talk</strong> at the <strong>Collège de France</strong>, Paris, hosted by Prof. Marco Schirò.</span></li>
         <li><span class="meta">Dec 2023</span><span>Started my PhD at ICFO as a “la Caixa” INPhINIT fellow.</span></li>
       </ul>
     </section>
@@ -95,40 +118,40 @@
     <section class="block" id="publications">
       <h2><span class="num">03</span>Publications</h2>
       <ol class="pubs">
-        <li>
+        <li data-doi="10.1103/69jg-sq8r">
           <span class="meta">[4] · 2026</span>
           <div>
             <p class="title">Quantum electrodynamics of graphene Landau levels in a deep-subwavelength hyperbolic phonon-polariton cavity</p>
             <p class="authors">G. M. Andolina, M. Ceccanti, <strong>B. Turini</strong>, R. Riolo, M. Polini, M. Schirò, F. H. L. Koppens</p>
             <p class="venue"><em>Physical Review Research</em> 8, 023044 (2026)</p>
-            <p class="pub-links"><a href="https://doi.org/10.1103/69jg-sq8r">DOI</a><a href="https://arxiv.org/abs/2501.04133">arXiv</a></p>
+            <p class="pub-links"><a href="https://doi.org/10.1103/69jg-sq8r">DOI</a><a href="https://arxiv.org/abs/2501.04133">arXiv</a><span class="cites">Cited by <b>12</b></span></p>
           </div>
         </li>
-        <li>
+        <li data-doi="10.1002/pssb.202400534">
           <span class="meta">[3] · 2025</span>
           <div>
             <p class="title">Side-gate modulation of supercurrent in InSb nanoflag-based Josephson junctions</p>
             <p class="authors"><strong>B. Turini</strong>, S. Salimian, M. Carrega, F. Paolucci, V. Zannier, L. Sorba, S. Heun</p>
             <p class="venue"><em>Physica Status Solidi (b)</em> 262, 2400534 (2025)</p>
-            <p class="pub-links"><a href="https://doi.org/10.1002/pssb.202400534">DOI</a><a href="https://arxiv.org/abs/2410.14469">arXiv</a></p>
+            <p class="pub-links"><a href="https://doi.org/10.1002/pssb.202400534">DOI</a><a href="https://arxiv.org/abs/2410.14469">arXiv</a><span class="cites">Cited by <b>5</b></span></p>
           </div>
         </li>
-        <li>
+        <li data-doi="10.1103/PhysRevResearch.5.033015">
           <span class="meta">[2] · 2023</span>
           <div>
             <p class="title">Half-integer Shapiro steps in highly transmissive InSb nanoflag Josephson junctions</p>
             <p class="authors">A. Iorio, A. Crippa, <strong>B. Turini</strong>, S. Salimian, M. Carrega, L. Chirolli, V. Zannier, L. Sorba, E. Strambini, F. Giazotto, S. Heun</p>
             <p class="venue"><em>Physical Review Research</em> 5, 033015 (2023)</p>
-            <p class="pub-links"><a href="https://doi.org/10.1103/PhysRevResearch.5.033015">DOI</a><a href="https://arxiv.org/abs/2303.05951">arXiv</a></p>
+            <p class="pub-links"><a href="https://doi.org/10.1103/PhysRevResearch.5.033015">DOI</a><a href="https://arxiv.org/abs/2303.05951">arXiv</a><span class="cites">Cited by <b>22</b></span></p>
           </div>
         </li>
-        <li>
+        <li data-doi="10.1021/acs.nanolett.2c02899">
           <span class="meta">[1] · 2022</span>
           <div>
             <p class="title">Josephson diode effect in high-mobility InSb nanoflags</p>
             <p class="authors"><strong>B. Turini</strong>, S. Salimian, M. Carrega, A. Iorio, E. Strambini, F. Giazotto, V. Zannier, L. Sorba, S. Heun</p>
             <p class="venue"><em>Nano Letters</em> 22, 8502 (2022)</p>
-            <p class="pub-links"><a href="https://doi.org/10.1021/acs.nanolett.2c02899">DOI</a><a href="https://arxiv.org/abs/2207.08772">arXiv</a></p>
+            <p class="pub-links"><a href="https://doi.org/10.1021/acs.nanolett.2c02899">DOI</a><a href="https://arxiv.org/abs/2207.08772">arXiv</a><span class="cites">Cited by <b>141</b></span></p>
           </div>
         </li>
       </ol>
@@ -137,40 +160,126 @@
     <!-- ───────── Talks & Posters ───────── -->
     <section class="block" id="talks">
       <h2><span class="num">04</span>Talks &amp; Posters</h2>
-      <ul class="rows talks">
+      <div>
+        <h3 class="sub">Talks</h3>
+        <ul class="rows talks">
         <li>
-          <span class="meta">2026</span>
-          <span>
-            <span class="kind">Poster</span>
-            <strong>Forbidden Landau-level transitions and mode hybridization via phonon-polariton nanocavities</strong><br>
-            <span class="where">Frontiers of Cavity Quantum Electrodynamics — Paris, France</span>
-          </span>
-        </li>
-        <li>
-          <span class="meta">2026</span>
-          <span>
-            <span class="kind">[Talk / Poster]</span>
+          <span class="meta">Apr 2026</span>
+          <div>
             <strong>Hyperbolic cavity electrodynamics with graphene electrons in the quantum Hall regime</strong><br>
-            <span class="where">International Conference on Science and Technology of Quantum Matter — [City, Country]</span>
-          </span>
+            <span class="where"><a href="https://www.quantumconf.eu/2026/index.php">QUANTUMatter 2026</a> — Barcelona, Spain</span>
+            <figure class="talk-fig single">
+              <a class="panel" href="assets/talk-quantumatter-2026.jpg"><img src="assets/talk-quantumatter-2026.jpg" alt="Bianca Turini giving a talk on strong phonon-photon-electron interaction at QUANTUMatter 2026" loading="lazy"></a>
+              <figcaption>Speaking at QUANTUMatter 2026, Barcelona.</figcaption>
+            </figure>
+          </div>
         </li>
         <li>
           <span class="meta">Jul 2025</span>
           <span>
-            <span class="kind">Poster</span>
+            <span class="kind award">Invited talk</span><br>
             <strong>Graphene quantum Hall electrodynamics in deep-subwavelength phonon-polariton cavities</strong><br>
-            <span class="where">FisMat 2025 — [City], Italy</span>
+            <span class="where"><a href="https://eventi.cnism.it/fismat2025">FisMat 2025</a> — Ca’ Foscari University, Venice, Italy</span>
+          </span>
+        </li>
+        <li>
+          <span class="meta">Apr 2025</span>
+          <span>
+            <span class="kind award">Invited talk</span><br>
+            <strong>Graphene quantum Hall electrodynamics in deep-subwavelength phonon-polariton cavities</strong><br>
+            <span class="where">Collège de France — Paris, France · Hosted by Prof. Marco Schirò</span>
           </span>
         </li>
         <li>
           <span class="meta">Mar 2024</span>
-          <span>
-            <span class="kind">Talk</span>
+          <div>
             <strong>Exploring cavity-induced effects in 2D quantum materials</strong><br>
-            <span class="where">APS GERA Energy Workshop — Minneapolis, USA</span>
+            <span class="where"><a href="https://meetings.aps.org/Meeting/MAR24">APS March Meeting 2024</a> — Minneapolis, USA</span>
+            <p class="pub-links"><a href="https://meetings-archive.aps.org/mar/2024/s04/8/">Abstract ↗</a></p>
+          </div>
+        </li>
+        </ul>
+
+        <h3 class="sub">Posters</h3>
+        <ul class="rows talks">
+        <li>
+          <span class="meta">Apr 2026</span>
+          <div>
+            <span class="kind award">★ Honorable Mention</span><br>
+            <strong>Forbidden Landau-level transitions and mode hybridization via phonon-polariton nanocavities</strong><br>
+            <span class="where">Frontiers of Cavity Quantum Electrodynamics, Rice Center for Cavity QED — Paris, France</span>
+            <p class="pub-links"><a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7455293863033958400/">▶ Watch interview ↗</a></p>
+            <figure class="talk-fig">
+              <div class="fig-grid">
+                <a class="panel" href="assets/poster-paris-2026.jpg">
+                  <img src="assets/poster-paris-2026.jpg" alt="Bianca Turini presenting her poster on phonon-polariton nanocavities in Paris" loading="lazy">
+                  <span class="panel-label">a</span>
+                </a>
+                <div class="panel">
+                  <video src="assets/polariton-dance-2026.mp4" poster="assets/polariton-dance-2026-poster.jpg"
+                         muted loop playsinline autoplay preload="metadata"
+                         aria-label="Short clip: the polariton dance with Prof. Jun Kono and team"></video>
+                  <span class="panel-label">b</span>
+                </div>
+                <a class="panel wide" href="assets/group-paris-2026.jpg">
+                  <img src="assets/group-paris-2026.jpg" alt="Group photo of the Frontiers of Cavity Quantum Electrodynamics conference, Paris, April 2026" loading="lazy">
+                  <span class="panel-label">c</span>
+                </a>
+              </div>
+              <figcaption><b>(a)</b> At the poster. <b>(b)</b> The polariton dance with Prof. Jun Kono &amp; team. <b>(c)</b> Conference group photo.</figcaption>
+            </figure>
+          </div>
+        </li>
+        <li>
+          <span class="meta">May 2025</span>
+          <span>
+            <strong>Graphene quantum Hall electrodynamics in deep-subwavelength phonon-polariton cavities</strong><br>
+            <span class="where"><a href="https://www.grc.org/topological-and-correlated-matter-conference/2025">Gordon Research Conference: Topological and Correlated Matter</a> — Castelldefels, Spain</span>
           </span>
         </li>
-      </ul>
+        <li>
+          <span class="meta">Jun 2024</span>
+          <span>
+            <strong>Graphene Landau level cavity QED with phonon-polaritonic cavities</strong><br>
+            <span class="where"><a href="https://indico.psi.ch/event/16003/">Challenges and perspectives in resonator-mediated quantum many-body physics</a>, ETH Zürich — Zürich, Switzerland</span>
+          </span>
+        </li>
+        <li>
+          <span class="meta">May 2024</span>
+          <div>
+            <strong>Graphene Landau level cavity QED with phonon-polaritonic cavities</strong><br>
+            <span class="where"><a href="https://www.conferences.uni-hamburg.de/event/405/">Workshop: Cavity Control of Quantum Materials</a>, CFEL / DESY — Hamburg, Germany</span>
+            <figure class="talk-fig single">
+              <a class="panel" href="assets/hamburg-2024.jpg"><img src="assets/hamburg-2024.jpg" alt="Bianca Turini with theory collaborators in front of their posters at the Hamburg workshop" loading="lazy"></a>
+              <figcaption>With my theory collaborators from Pisa at the poster session.</figcaption>
+            </figure>
+          </div>
+        </li>
+        </ul>
+
+        <h3 class="sub">Schools</h3>
+        <ul class="rows talks">
+        <li>
+          <span class="meta">Apr 2023</span>
+          <span>
+            <strong><a href="https://sfoptique.org/pages/sfo/ecoles-thematiques/2023-optomecanique-nanophononique">Optomechanics &amp; Nanophononics</a></strong><br>
+            <span class="where">Spring school, École de Physique des Houches — Les Houches, France</span>
+          </span>
+        </li>
+        <li>
+          <span class="meta">Jul 2022</span>
+          <div>
+            <strong><a href="https://mpq.u-paris.fr/en/qflm-2022-school-at-varenna-italy/">Quantum Fluids of Light and Matter</a></strong><br>
+            <span class="where">International School of Physics “Enrico Fermi” — Varenna, Italy<br>
+            Poster: <em>Non-reciprocal supercurrent in InSb nanoflag-based ballistic Josephson junctions</em></span>
+            <figure class="talk-fig single tall">
+              <a class="panel" href="assets/varenna-2022.jpg"><img src="assets/varenna-2022.jpg" alt="Bianca Turini next to her poster on non-reciprocal supercurrent in InSb nanoflags, Lake Como in the background" loading="lazy"></a>
+              <figcaption>My very first poster presentation, in such a beautiful place.</figcaption>
+            </figure>
+          </div>
+        </li>
+        </ul>
+      </div>
     </section>
 
     <!-- ───────── Education ───────── -->
@@ -178,30 +287,82 @@
       <h2><span class="num">05</span>Education</h2>
       <ul class="rows">
         <li><span class="meta">2023 —</span><span><strong>PhD in Photonics</strong><br>ICFO &amp; Universitat Politècnica de Catalunya<br><span class="where">“la Caixa” INPhINIT doctoral fellowship</span></span></li>
-        <li><span class="meta">20XX — XX</span><span><strong>M.Sc. in [Field]</strong><br>[University]</span></li>
-        <li><span class="meta">20XX — XX</span><span><strong>B.Sc. in [Field]</strong><br>[University]</span></li>
+        <li><span class="meta">Apr–Jun 2022</span><span><strong>Research stay</strong><br>Laboratoire de Physique de l’École Normale Supérieure (LPENS), Paris<br><span class="where"><a href="https://www.lpens.ens.psl.eu/research/quant/equipe-21/?lang=en">Hybrid Quantum Circuits</a> group of <a href="https://www.phys.ens.psl.eu/~kontos/">Takis Kontos</a><br>Project: 2.5D GHz cavities for cavity-integrated quantum materials</span></span></li>
+        <li><span class="meta">2020 — 22</span><span><strong>M.Sc. in Physics and Nanoscience</strong><br>Scuola Normale Superiore, Pisa<br><span class="where">Thesis: <em>Josephson diode effect in high-mobility InSb nanoflags</em> — <a href="https://meta.nano.cnr.it/nest/">NEST Laboratory</a>, groups of <a href="https://web.nano.cnr.it/heun/">Stefan Heun</a> and <a href="https://www.nano.cnr.it/researcher-profile/francesco-giazotto/">Francesco Giazotto</a></span></span></li>
+        <li><span class="meta">2017 — 20</span><span><strong>B.Sc. in Physics</strong><br>University of Pisa<br><span class="where">Thesis: development of a low-cost eye tracker for EEG experiments with visual stimuli — <a href="https://meta.nano.cnr.it/nest/">NEST Laboratory</a>, group of Gian Michele Ratto</span></span></li>
+      </ul>
+    </section>
+
+    <!-- ───────── Expertise ───────── -->
+    <section class="block" id="expertise">
+      <h2><span class="num">06</span>Expertise</h2>
+      <ul class="rows skills">
+        <li><span class="meta">Design &amp; simulation</span><span>Electromagnetic simulations of nanocavities (COMSOL Multiphysics, Tidy3D)</span></li>
+        <li><span class="meta">Fabrication</span><span>Van der Waals heterostructure assembly (graphene, hBN) by dry transfer · electron-beam and optical lithography · reactive-ion etching · metal deposition · cleanroom processing · nano‑characterization</span></li>
+        <li><span class="meta">Measurement</span><span>Quantum transport · cryogenics · quantum Hall magnetotransport · near-field optical microscopy · phototransport · Josephson junctions and supercurrent spectroscopy</span></li>
       </ul>
     </section>
 
     <!-- ───────── Service ───────── -->
     <section class="block" id="service">
-      <h2><span class="num">06</span>Service</h2>
+      <h2><span class="num">07</span>Service</h2>
       <ul class="rows">
-        <li><span class="meta">2025—26</span><span><strong>Nanofabrication Seminar Series</strong><br><span class="where">President of the organising committee (2025), committee member (2026)</span></span></li>
-        <li><span class="meta">2024</span><span><strong>Student Conference in Optics and Photonics</strong><br><span class="where">Secretary of the organising committee — Castelldefels</span></span></li>
-        <li><span class="meta">—</span><span><strong>Diversity &amp; Inclusion Committee</strong><br><span class="where">Member, ICFO</span></span></li>
+        <li><span class="meta">2024 —</span><span><strong><a href="https://www.icfo.eu/studies/student-organization/" target="_blank" rel="noopener">ICONS — ICFO Student Chapter</a></strong><br><span class="where">Secretary (current) · formerly President</span></span></li>
+        <li><span class="meta">2025 — 26</span><span><strong>Nanofabrication Seminar Series</strong><br><span class="where">Co-founder</span></span></li>
+        <li><span class="meta">Oct 2024</span><span><strong><a href="https://scop24.icfo.eu" target="_blank" rel="noopener">SCOP24 — Student Conference in Optics and Photonics</a></strong><br><span class="where">Co-organiser with ICONS, the ICFO student chapter · Secretary of the organising committee — ICFO, Castelldefels</span></span></li>
+        <li><span class="meta">2023 — 25</span><span><strong>Diversity &amp; Inclusion Committee</strong><br><span class="where">Member, ICFO</span></span></li>
       </ul>
     </section>
 
   </main>
 
   <footer>
-    <span><a href="mailto:you@example.com">you@example.com</a></span>
+    <span id="contact"><a class="js-mail">bianca.turini at icfo.eu</a></span>
     <span>ICFO · Castelldefels, Barcelona</span>
     <span>Updated Nov 2026</span>
   </footer>
 
   <script>
+    // Email is assembled here so the plain address never appears in the HTML (less spam)
+    (function () {
+      var addr = ["bianca.turini", "icfo.eu"].join("@");
+      document.querySelectorAll(".js-mail").forEach(function (a) { a.href = "mailto:" + addr; });
+    })();
+
+    // Respect "reduce motion": don't autoplay the clip, show controls instead
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll("video[autoplay]").forEach(function (v) {
+        v.removeAttribute("autoplay"); v.pause(); v.controls = true;
+      });
+    }
+
+    // Live citation counts from OpenAlex (free, open citation database).
+    // The numbers written in the HTML are a fallback if the request fails.
+    (function () {
+      var items = document.querySelectorAll(".pubs li[data-doi]");
+      var dois = Array.prototype.map.call(items, function (li) { return li.dataset.doi; });
+      if (!dois.length || !window.fetch) return;
+      var url = "https://api.openalex.org/works?per-page=50&select=doi,cited_by_count&filter=doi:" +
+        dois.map(encodeURIComponent).join("|");
+      fetch(url)
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+        .then(function (data) {
+          var counts = {};
+          data.results.forEach(function (w) {
+            if (w.doi) counts[w.doi.replace("https://doi.org/", "").toLowerCase()] = w.cited_by_count;
+          });
+          var total = 0;
+          items.forEach(function (li) {
+            var el = li.querySelector(".cites b");
+            var n = counts[li.dataset.doi.toLowerCase()];
+            if (typeof n === "number") { el.textContent = n; }
+            total += parseInt(el.textContent, 10) || 0;
+          });
+          var t = document.getElementById("total-cites"); if (t) t.textContent = total;
+        })
+        .catch(function () {});
+    })();
+
     (function () {
       var root = document.documentElement;
       var btn = document.querySelector(".theme-toggle");
