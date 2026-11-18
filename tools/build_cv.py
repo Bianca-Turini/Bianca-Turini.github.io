@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Build assets/cv.pdf from the content of index.html.
+"""Build assets/cv-Bianca-Turini.pdf from the content of index.html.
 
 The website is the single source of truth: edit index.html, then run
 
     python3 tools/build_cv.py
 
 It writes an intermediate tools/cv.html (not linked from the site) and prints it
-to assets/cv.pdf with headless Google Chrome. Requires: beautifulsoup4.
+to assets/cv-Bianca-Turini.pdf with headless Google Chrome. Requires: beautifulsoup4.
 """
 import copy
 import datetime
@@ -19,7 +19,7 @@ from bs4 import BeautifulSoup
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "index.html"
 OUT_HTML = ROOT / "tools" / "cv.html"
-OUT_PDF = ROOT / "assets" / "cv.pdf"
+OUT_PDF = ROOT / "assets" / "cv-Bianca-Turini.pdf"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # Contact address as printed on the CV.
@@ -156,6 +156,8 @@ schools = [row_html(d, b) for d, b, _ in talk_lists.get("Schools", [])]
 
 # ── Service ─────────────────────────────────────────────────────────────
 service = [row_html(d, b) for d, b, _ in rows_from(site.select_one("#service .rows"))]
+_out = site.select_one("#outreach .rows")
+outreach = [row_html(d, b) for d, b, _ in rows_from(_out)] if _out else []
 
 today = datetime.date.today().strftime("%B %Y")
 
@@ -168,7 +170,7 @@ html = f"""<!doctype html>
 <style>
   @page {{ size: A4; margin: 14mm 15mm 14mm; }}
   * {{ box-sizing: border-box; }}
-  body {{ margin: 0; font: 9pt/1.38 "IBM Plex Sans", sans-serif; color: #111316; }}
+  body {{ margin: 0; font: 9pt/1.30 "IBM Plex Sans", sans-serif; color: #111316; }}
   a {{ color: inherit; text-decoration: none; }}
   p {{ margin: 0 0 .5em; }}
   ul {{ list-style: none; margin: 0; padding: 0; }}
@@ -190,7 +192,7 @@ html = f"""<!doctype html>
           background: #1f3cff; color: #fff; padding: 0 3pt; margin-right: 4pt; vertical-align: 1pt; }}
   .pubs li strong {{ font-weight: 600; }}
   .rows a, .profile a {{ border-bottom: .5px solid #1f3cff; }}
-  footer {{ margin-top: 10pt; font: 7pt "IBM Plex Mono", monospace; letter-spacing: .06em; text-transform: uppercase; color: #5f646b; }}
+  footer {{ margin-top: 6pt; font: 7pt "IBM Plex Mono", monospace; letter-spacing: .06em; text-transform: uppercase; color: #5f646b; }}
 </style></head>
 <body>
 <header>
@@ -209,6 +211,7 @@ html = f"""<!doctype html>
 {section("Posters", posters)}
 {section("Schools", schools)}
 {section("Service", service)}
+{section("Outreach", outreach)}
 <footer>Updated {today} · Full version with links: {WEBSITE}</footer>
 </body></html>
 """
